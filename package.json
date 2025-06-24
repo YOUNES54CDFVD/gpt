@@ -9,5 +9,6 @@
   "dependencies": {
     "telegraf": "^4.12.2",
     "puppeteer-core": "^21.3.8"
+    "@sparticuz/chromium": "^112.0.0"
   }
 }
