@@ -3,8 +3,9 @@ const chromium = require("@sparticuz/chromium");
 
 async function runWormGPT(promptText) {
   const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    headless: chromium.headless,
+    executablePath: await chromium.executablePath(),
+    args: chromium.args
   });
 
   const page = await browser.newPage();
@@ -35,8 +36,8 @@ async function runWormGPT(promptText) {
     return response;
   } catch (err) {
     await browser.close();
-    console.error("خطأ:", err);
-    return "حدث خطأ أثناء الوصول إلى الذكاء الاصطناعي.";
+    console.error("❌ خطأ أثناء الوصول:", err);
+    return "⚠️ حدث خطأ أثناء الوصول إلى الأداة. يرجى المحاولة لاحقًا.";
   }
 }
 
