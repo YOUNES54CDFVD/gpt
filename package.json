@@ -1,14 +1,16 @@
 {
-  "name": "ai-telegram-bot",
+  "name": "gpt-bot",
   "version": "1.0.0",
-  "description": "AI bot running Puppeteer",
+  "description": "Telegram AI bot with Puppeteer",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "puppeteer": "^21.3.8",
-    "telegraf": "^4.12.2"
-    "puppeteer": { "skipChromiumDownload": true }
+    "telegraf": "^4.12.2",
+    "puppeteer": "^21.3.8"
+  },
+  "puppeteer": {
+    "skipChromiumDownload": true
   }
 }
