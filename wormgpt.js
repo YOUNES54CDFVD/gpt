@@ -10,7 +10,7 @@ async function runWormGPT(promptText) {
 
   const page = await browser.newPage();
   try {
-    await page.goto("https://aidark.net/#chatId=%221750797631550%22&activeContact=%22Cyber+Security%22", {
+    await page.goto("https://aidark.net/#url=%22%22&activeContact=%22Cyber+Security%22", {
       waitUntil: "networkidle2",
       timeout: 60000,
     });
