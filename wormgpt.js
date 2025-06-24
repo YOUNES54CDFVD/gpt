@@ -1,4 +1,5 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
+const chromium = require("@sparticuz/chromium");
 
 async function runWormGPT(promptText) {
   const browser = await puppeteer.launch({
