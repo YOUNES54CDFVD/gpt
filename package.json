@@ -1,7 +1,7 @@
 {
   "name": "gpt-bot",
   "version": "1.0.0",
-  "description": "Telegram bot with puppeteer-core",
+  "description": "Telegram bot powered by Puppeteer",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -9,6 +9,7 @@
   "dependencies": {
     "telegraf": "^4.12.2",
     "puppeteer-core": "^21.3.8",
-    "@sparticuz/chromium": "^112.0.0"
+    "@sparticuz/chromium": "^112.0.0",
+    "dotenv": "^16.4.5"
   }
 }
